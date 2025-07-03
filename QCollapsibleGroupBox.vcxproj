@@ -95,11 +95,8 @@
     <QtRcc Include="mainwindow.qrc" />
     <QtUic Include="mainwindow.ui" />
     <QtMoc Include="mainwindow.h" />
+    <ClCompile Include="clickablelabel.cpp" />
     <ClCompile Include="collapsiblegroupbox.cpp" />
-    <ClCompile Include="ExpandableGroupBox.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="groupboxcollapser.cpp" />
     <ClCompile Include="mainwindow.cpp" />
     <ClCompile Include="main.cpp" />
@@ -108,13 +105,10 @@
     <QtMoc Include="collapsiblegroupbox.h" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="ExpandableGroupBox.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </QtMoc>
+    <QtMoc Include="groupboxcollapser.h" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="groupboxcollapser.h" />
+    <QtMoc Include="clickablelabel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

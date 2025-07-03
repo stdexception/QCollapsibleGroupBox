@@ -43,10 +43,10 @@
     <ClCompile Include="collapsiblegroupbox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ExpandableGroupBox.cpp">
+    <ClCompile Include="groupboxcollapser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="groupboxcollapser.cpp">
+    <ClCompile Include="clickablelabel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -54,10 +54,10 @@
     <QtMoc Include="collapsiblegroupbox.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="ExpandableGroupBox.h">
+    <QtMoc Include="groupboxcollapser.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="groupboxcollapser.h">
+    <QtMoc Include="clickablelabel.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

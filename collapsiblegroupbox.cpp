@@ -1,7 +1,7 @@
 #include "collapsiblegroupbox.h"
+#include "clickablelabel.h"
 #include <QTimer>
 #include <QPushButton>
-#include <QLabel>
 #include <QBoxLayout>
 
 CollapsibleGroupBox::CollapsibleGroupBox(const QString &title, QWidget *parent)
@@ -28,8 +28,9 @@ CollapsibleGroupBox::CollapsibleGroupBox(const QString &title, QWidget *parent)
     m_toggleButton->setIcon(m_isCollapsed ? m_collapseIcon : m_expandIcon);
     connect(m_toggleButton, &QPushButton::toggled, this, &CollapsibleGroupBox::toggleCollapse);
 
-    m_titleLabel = new QLabel(title, titleWidget);
+    m_titleLabel = new ClickableLabel(title, titleWidget);
     m_titleLabel->setObjectName("QGroupBoxTitle");
+    connect(m_titleLabel, SIGNAL(clicked()), m_toggleButton, SLOT(click()));
 
     m_titleLayout->addWidget(m_toggleButton);
     m_titleLayout->addWidget(m_titleLabel);
